@@ -4,9 +4,9 @@ $(document).ready(function () {
     scheduleInput();
 });
 
-$("#appt9am").click(function () {
-    var availableSlot = "#9amFormat";
-    var apptInfo = document.getElementById('timeFormat9am').value;
+$("#confirmButton9am").click(function () {
+    var availableSlot = "textarea9am";
+    var apptInfo = document.getElementById('textarea9am').value;
     setAppt(availableSlot, apptInfo);
     scheduleInput();
 });
