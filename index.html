@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="assets/css/style.css" />
+ 
+ 
     
     
     <title>Cory's Work Day Scheduler</title>
@@ -16,19 +18,19 @@
 <body>
 
     <header class="jumbotron">
-        <h1 class="h1-display">
-            Work Day
+        <h1 class="display-3">
+            Work Day Scheduler
         </h1>
-        <p class="intro">
+        <p class="lead">
             A simple calendar app for scheduling your work day.
         </p>
 
-        <p class="intro" id="today">Date</p>
+        <p class="lead" id="today">Date</p>
     </header>
     <div class="container">
         <div class="timerows" id="9am">
             <div class="timecolumns.col-lg-2" id="hour">
-                <div class="apptHour">9:00 AM</div>
+                <div id="apptHour">9:00 AM</div>
             </div>
             <div class="timecolumns.col-lg-8" id="enter9am">
                 <textarea cols="50" id="textarea9am" rows="4"></textarea>
@@ -39,7 +41,7 @@
         </div>
         <div class="timerows" id="10am">
             <div class="timecolumns.col-lg-2" id="hour">
-                <div class="apptHour">10:00 AM</div>
+                <div id="apptHour">10:00 AM</div>
             </div>
             <div class="timecolumns.col-lg-8" id="enter10am">
                 <textarea cols="50" id="textarea10am" rows="4"></textarea>
@@ -49,8 +51,8 @@
             </div>
         </div>
         <div class="timerows" id="11am">
-            <div class="timecolumns.col-lg-2" id="hour">
-                <div class="apptHour">11:00 AM</div>
+            <div class="timecolumn.col-lg-2" id="hour">
+                <div id="currentDay">11:00 AM</div>
             </div>
             <div class="timecolumns.col-lg-8" id="enter11am">
                 <textarea cols="50" id="textarea11am" rows="4"></textarea>
@@ -61,7 +63,7 @@
         </div>
         <div class="timerows" id="12pm">
             <div class="timecolumns.col-lg-2" id="hour">
-                <div class="apptHour">12:00 PM</div>
+                <div id="apptHour">12:00 PM</div>
             </div>
             <div class="timecolumns.col-lg-8" id="enter12pm">
                 <textarea cols="50" id="textarea12pm" rows="4"></textarea>
@@ -72,13 +74,35 @@
         </div>
         <div class="timerows" id="1pm">
             <div class="timecolumns.col-lg-2" id="hour">
-                <div class="apptHour">1:00 PM</div>
+                <div id="apptHour">1:00 PM</div>
             </div>
             <div class="timecolumns.col-lg-8" id="enter1pm">
                 <textarea cols="50" id="textarea1pm" rows="4"></textarea>
             </div>
             <div class="timecolumns.col-lg-2" id="confirmAppt">
                 <button class="confirmButton" id="confirmButton1pm" type="button"></button>
+            </div>
+        </div>
+        <div class="timerows" id="2pm">
+            <div class="timecolumns.col-lg-2" id="hour">
+                <div id="apptHour">2:00 PM</div>
+            </div>
+            <div class="timecolumns.col-lg-8" id="enter2pm">
+                <textarea cols="50" id="textarea2pm" rows="4"></textarea>
+            </div>
+            <div class="timecolumns.col-lg-2" id="confirmAppt">
+                <button class="confirmButton" id="confirmButton2pm" type="button"></button>
+            </div>
+        </div>
+        <div class="timerows" id="3pm">
+            <div class="timecolumns.col-lg-2" id="hour">
+                <div id="apptHour">3:00 PM</div>
+            </div>
+            <div class="timecolumns.col-lg-8" id="enter3pm">
+                <textarea cols="50" id="textarea3pm" rows="4"></textarea>
+            </div>
+            <div class="timecolumns.col-lg-2" id="confirmAppt">
+                <button class="confirmButton" id="confirmButton3pm" type="button"></button>
             </div>
         </div>
     </div>
