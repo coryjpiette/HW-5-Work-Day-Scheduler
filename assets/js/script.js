@@ -36,4 +36,17 @@ scheduleArray = JSON.parse(localStorage.getItem("scheduleArray")) || [];
 
 scheduleArray = scheduleArray.filter(appointment => appointment.time !== newAppt.time);
 
-scheduleArray.push(newAppy);
+scheduleArray.push(newAppt);
+
+localStorage.setItem('scheduleArray', JSON.stringify(scheduleArray));
+
+function writeToSchedule() {
+    scheduleArray = JSON.parse(localStorage.getItem("scheduleArray")) || [];
+
+    scheduleArray.map(newAppt => {
+     
+        if (newAppt.title != 0) {
+            $(newAppt.time).html(newAppt.title);
+        }
+    });
+}
