@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <title>Cory's Work Day Scheduler</title>
 </head>
@@ -25,11 +25,11 @@
     </header>
     <div class = "container">
         <div class = "timerows" id = "9am">
-            <div class = "timecolumns.col-lg-4" id = "hour">
+            <div class = "timecolumns.col-lg-2" id = "hour">
                 <div class = "apptHour">9:00 AM</div>
             </div>
             <div class="timecolumns.col-lg-10" id="enter9am">
-                <textarea cols="75" id="textarea9am" rows="4"></textarea>
+                <textarea cols="50" id="textarea9am" rows="4"></textarea>
             </div>
             <div class="timecolumns.col-lg-4" id="confirmAppt">
                 <button class="confirmButton" id="confirmButton9am" type="button"></button>
@@ -39,11 +39,21 @@
                     <div class = "apptHour">10:00 AM</div>
                 </div>
                 <div class="timecolumns.col-lg-10" id="enter10am">
-                    <textarea cols="75" id="textarea9am" rows="4"></textarea>
+                    <textarea cols="75" id="textarea10am" rows="4"></textarea>
                 </div>
                 <div class="timecolumns.col-lg-4" id="confirmAppt">
                     <button class="confirmButton" id="confirmButton10am" type="button"></button>
                 </div>
+                <div class = "timerows" id = "11am">
+                    <div class = "timecolumns.col-lg-4" id = "hour">
+                        <div class = "apptHour">11:00 AM</div>
+                    </div>
+                    <div class="timecolumns.col-lg-10" id="enter11am">
+                        <textarea cols="75" id="textarea11am" rows="4"></textarea>
+                    </div>
+                    <div class="timecolumns.col-lg-4" id="confirmAppt">
+                        <button class="confirmButton" id="confirmButton11am" type="button"></button>
+                    </div>
 
         </div>
 </div>
@@ -53,3 +63,4 @@
 </body>
 
 </html>
+
