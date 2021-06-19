@@ -68,7 +68,7 @@ body {
 
 }
 
-#enter9am, #enter10am, #enter11am, #enter12pm{
+#enter9am, #enter10am, #enter11am, #enter12pm, #enter1pm{
   position: relative;
   background: green;
   color: white;

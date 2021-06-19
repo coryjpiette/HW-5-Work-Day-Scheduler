@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    
     <title>Cory's Work Day Scheduler</title>
-
 </head>
 
 <body>
@@ -22,17 +23,15 @@
             A simple calendar app for scheduling your work day.
         </p>
 
-        <p class="intro" id="today">
-            Today's Date:
-        </p>
+        <p class="intro" id="today">Date</p>
     </header>
     <div class="container">
         <div class="timerows" id="9am">
-            <div class="col-lg-2" id="hour">
+            <div class="timecolumns.col-lg-2" id="hour">
                 <div class="apptHour">9:00 AM</div>
             </div>
-            <div class="timecolumn.col-lg-8" id="enter9am">
-                <textarea cols="75" id="textarea9am" rows="4"></textarea>
+            <div class="timecolumns.col-lg-8" id="enter9am">
+                <textarea cols="50" id="textarea9am" rows="4"></textarea>
             </div>
             <div class="timecolumns.col-lg-2" id="confirmAppt">
                 <button class="confirmButton" id="confirmButton9am" type="button"></button>
@@ -43,7 +42,7 @@
                 <div class="apptHour">10:00 AM</div>
             </div>
             <div class="timecolumns.col-lg-8" id="enter10am">
-                <textarea cols="75" id="textarea10am" rows="4"></textarea>
+                <textarea cols="50" id="textarea10am" rows="4"></textarea>
             </div>
             <div class="timecolumns.col-lg-2" id="confirmAppt">
                 <button class="confirmButton" id="confirmButton10am" type="button"></button>
@@ -54,7 +53,7 @@
                 <div class="apptHour">11:00 AM</div>
             </div>
             <div class="timecolumns.col-lg-8" id="enter11am">
-                <textarea cols="75" id="textarea11am" rows="4"></textarea>
+                <textarea cols="50" id="textarea11am" rows="4"></textarea>
             </div>
             <div class="timecolumns.col-lg-2" id="confirmAppt">
                 <button class="confirmButton" id="confirmButton11am" type="button"></button>
@@ -65,10 +64,21 @@
                 <div class="apptHour">12:00 PM</div>
             </div>
             <div class="timecolumns.col-lg-8" id="enter12pm">
-                <textarea cols="75" id="textarea12pm" rows="4"></textarea>
+                <textarea cols="50" id="textarea12pm" rows="4"></textarea>
             </div>
             <div class="timecolumns.col-lg-2" id="confirmAppt">
                 <button class="confirmButton" id="confirmButton12pm" type="button"></button>
+            </div>
+        </div>
+        <div class="timerows" id="1pm">
+            <div class="timecolumns.col-lg-2" id="hour">
+                <div class="apptHour">1:00 PM</div>
+            </div>
+            <div class="timecolumns.col-lg-8" id="enter1pm">
+                <textarea cols="50" id="textarea1pm" rows="4"></textarea>
+            </div>
+            <div class="timecolumns.col-lg-2" id="confirmAppt">
+                <button class="confirmButton" id="confirmButton1pm" type="button"></button>
             </div>
         </div>
     </div>
