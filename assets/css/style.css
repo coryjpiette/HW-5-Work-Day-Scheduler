@@ -39,9 +39,9 @@ body {
   }
   
   .timecolumns {
-        border-right: 1px solid black;
-      }
-      
+    border-right: 1px solid black;
+  }
+  
   
 #confirmAppt {
   position: relative;
@@ -68,7 +68,7 @@ body {
 
 }
 
-#enter9am, #enter10am, #enter11am{
+#enter9am, #enter10am, #enter11am, #enter12pm{
   position: relative;
   background: green;
   color: white;
