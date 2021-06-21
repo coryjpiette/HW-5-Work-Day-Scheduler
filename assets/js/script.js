@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function () {
     $("#today").text(moment().format('dddd') + ", " + moment().format('LL'));
     scheduleInput();
@@ -244,15 +242,15 @@ function checkTime() {
     }
 
     if (time.isBetween(startTime, nineStartTime)) {
-        $('#userInput9').css('background', '#3fbd3f');
-        $('#userInput10').css('background', '#3fbd3f');
-        $('#userInput11').css('background', '#3fbd3f');
-        $('#userInput12').css('background', '#3fbd3f');
-        $('#userInput1').css('background', '#3fbd3f');
-        $('#userInput2').css('background', '#3fbd3f');
-        $('#userInput3').css('background', '#3fbd3f');
-        $('#userInput4').css('background', '#3fbd3f');
-        $('#userInput5').css('background', '#3fbd3f');
+        $('#enter9am').css('background', '#3fbd3f');
+        $('#enter10am').css('background', '#3fbd3f');
+        $('#enter11am').css('background', '#3fbd3f');
+        $('#enter12pm').css('background', '#3fbd3f');
+        $('#enter1pm').css('background', '#3fbd3f');
+        $('#enter2pm').css('background', '#3fbd3f');
+        $('#enter3pm').css('background', '#3fbd3f');
+        $('#enter4pm').css('background', '#3fbd3f');
+        $('#enter5pm').css('background', '#3fbd3f');
     }
 
 }
