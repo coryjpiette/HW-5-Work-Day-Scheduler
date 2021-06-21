@@ -3,6 +3,10 @@ body {
     font-size: 16px;
     line-height: 1;
   }
+  
+  
+
+
   .jumbotron {
     text-align: center;
     background-color: white;
@@ -11,6 +15,7 @@ body {
     border-bottom: 12px  black;
     padding:20px;
   }
+
   textarea{
     position: absolute;
     top:5px;
@@ -27,13 +32,14 @@ body {
     outline: none;
 
   }
-  
   .intro {
       font-size: 18px;
   }
+
+
   .timerows {
-  
     white-space: pre-wrap;
+   
     height: 80px;
     
   }
@@ -69,11 +75,11 @@ body {
 }
 
 #enter9am, #enter10am, #enter11am, #enter12pm, #enter1pm, #enter2pm, #enter3pm{
-  position: relative;
+  position: absolute;
   background: green;
   color: white;
   border-top: 1px solid #000000;
-  width:80%;
+  width:75%;
 }
 
 .confirmButton {
@@ -81,28 +87,23 @@ body {
   top: 0;
   left: 0;
   border-left: 1px solid black;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color: blue;
-  background-size: 20px 20px;
+  background-size: 25px 25px;
   background-repeat: no-repeat;
-  background-position: center;
-  width:100%;
+ background-position: center; 
   height:100%;
+  width:100%;
   padding-left:35px;
   padding-top:15px;
   color: white;
   overflow: auto;
   outline: none;
-  background-position: center; 
-height:100%;
-width:100%;
-padding-left:35px;
-padding-top:15px;
-color: white;
-overflow: auto;
-outline: none;
+
 }
+
+
 
 .confirmButton:hover {
   font-size: 22px;
