@@ -27,6 +27,49 @@ $("#confirmButton11am").click(function () {
     scheduleInput();
 });
 
+$("#confirmButton12pm").click(function () {
+    var availableSlot = "textarea12pm";
+    var apptInfo = document.getElementById('textarea12pm').value;
+    setAppt(availableSlot, apptInfo);
+    scheduleInput();
+});
+
+$("#confirmButton1pm").click(function () {
+    var availableSlot = "textarea1pm";
+    var apptInfo = document.getElementById('textarea1pm').value;
+    setAppt(availableSlot, apptInfo);
+    scheduleInput();
+});
+
+$("#confirmButton2pm").click(function () {
+    var availableSlot = "textarea2pm";
+    var apptInfo = document.getElementById('textarea2pm').value;
+    setAppt(availableSlot, apptInfo);
+    scheduleInput();
+});
+
+$("#confirmButton3pm").click(function () {
+    var availableSlot = "textarea3pm";
+    var apptInfo = document.getElementById('textarea3pm').value;
+    setAppt(availableSlot, apptInfo);
+    scheduleInput();
+});
+
+$("#confirmButton4pm").click(function () {
+    var availableSlot = "textarea4pm";
+    var apptInfo = document.getElementById('textarea4pm').value;
+    setAppt(availableSlot, apptInfo);
+    scheduleInput();
+});
+
+$("#confirmButton5pm").click(function () {
+    var availableSlot = "textarea5pm";
+    var apptInfo = document.getElementById('textarea5pm').value;
+    setAppt(availableSlot, apptInfo);
+    scheduleInput();
+});
+
+
 function setAppt(time, details) {
     var newAppt = {
         time: time,
@@ -199,6 +242,21 @@ function checkTime() {
         $('#enter5pm').css('background', '#d3d3d3');
 
     }
+
+    if (time.isBetween(startTime, nineStartTime)) {
+        $('#userInput9').css('background', '#3fbd3f');
+        $('#userInput10').css('background', '#3fbd3f');
+        $('#userInput11').css('background', '#3fbd3f');
+        $('#userInput12').css('background', '#3fbd3f');
+        $('#userInput1').css('background', '#3fbd3f');
+        $('#userInput2').css('background', '#3fbd3f');
+        $('#userInput3').css('background', '#3fbd3f');
+        $('#userInput4').css('background', '#3fbd3f');
+        $('#userInput5').css('background', '#3fbd3f');
+    }
+
 }
+
+
 
 
