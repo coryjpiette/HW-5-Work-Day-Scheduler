@@ -85,13 +85,24 @@ function checkTime() {
 
     if (time.isBetween(nineStartTime, nineEndTime)) {
 
-        $('#userInput9').css('background', '#ff6961');
+        $('#enter9am').css('background', '#ff6961');
     }
     if (time.isAfter(nineEndTime)) {
-        $('#userInput9').css('background', '#d3d3d3');
+        $('#enter9am').css('background', '#d3d3d3');
+    }
+        if(time.isBefore(tenstartTime)) {
 
-
+            $('#enter10am').css('background','#3fbd3f');
+        }
+    
+        if (time.isBetween(tenStartTime, tenEndTime)) {
+    
+            $('#enter10am').css('background', '#ff6961');
+        }
+        if (time.isAfter(tenEndTime)) {
+            $('#enter10am').css('background', '#d3d3d3');
+    
 }
 
 
-
+}
