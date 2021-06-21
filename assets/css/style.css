@@ -32,9 +32,15 @@ body {
     outline: none;
 
   }
-  .intro {
-      font-size: 18px;
-  }
+    .description{
+      white-space: pre-wrap;
+    }
+    
+    .time-block{
+      text-align: center;
+      border-radius: 15px;
+    }
+    
 
 
   .timerows {
@@ -93,12 +99,12 @@ body {
 
 }
 
-#enter9am, #enter10am, #enter11am, #enter12pm, #enter1pm, #enter2pm, #enter3pm, #enter4pm{
+#enter9am, #enter10am, #enter11am, #enter12pm, #enter1pm, #enter2pm, #enter3pm, #enter4pm, #enter5pm{
   position: absolute;
   background:#3fbd3f;
   color: white;
-  border-top: 1px solid #000000;
-  width:75%;
+  border-top: 1px solid black;
+  width:80%;
 }
 
 .confirmButton {
