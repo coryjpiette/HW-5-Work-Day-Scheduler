@@ -40,7 +40,7 @@ scheduleArray.push(newAppt);
 
 localStorage.setItem('scheduleArray', JSON.stringify(scheduleArray));
 
-function scheduleRecord() {
+function scheduleInput() {
     scheduleArray = JSON.parse(localStorage.getItem("scheduleArray")) || [];
 
     scheduleArray.map(newAppt => {
@@ -72,4 +72,26 @@ var fourstartTime = moment('4:00pm', format);
 var fourstartTime = moment('4:59pm', format);
 var fivestartTime = moment('5:00pm', format);
 var fiveEndTime = moment('5:59pm', format);
+
+setInterval(function () {
+    checkTime();
+}, 1000);
+
+function checkTime() {
+    if(time.isBefore(ninestartTime)) {
+
+        $('#enter9am').css('background','#3fbd3f');
+    }
+
+    if (time.isBetween(nineStartTime, nineEndTime)) {
+
+        $('#userInput9').css('background', '#ff6961');
+    }
+    if (time.isAfter(nineEndTime)) {
+        $('#userInput9').css('background', '#d3d3d3');
+
+
+}
+
+
 

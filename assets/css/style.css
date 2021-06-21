@@ -53,6 +53,10 @@ body {
     right:5px;
   }
   
+.future {
+  background-color: #d12b22;
+
+}
 #confirmAppt {
   position: relative;
   border:none;
@@ -62,6 +66,21 @@ body {
   width:10%;
 }
 
+.past {
+        
+        background-color: #3fbd3f;
+  color: white;
+}
+
+.present {
+  background-color: #db362d;
+  color: white;
+}
+
+.future {
+  background-color: #85e285;
+  color: white;
+}
 
 
 #hour {
@@ -76,7 +95,7 @@ body {
 
 #enter9am, #enter10am, #enter11am, #enter12pm, #enter1pm, #enter2pm, #enter3pm{
   position: absolute;
-  background: green;
+  background:#3fbd3f;
   color: white;
   border-top: 1px solid #000000;
   width:75%;
