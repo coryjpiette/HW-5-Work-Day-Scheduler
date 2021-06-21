@@ -110,16 +110,95 @@ function checkTime() {
     }
     if (time.isBefore(elevenStartTime)) {
 
-        $('#enter10am').css('background', '#3fbd3f');
+        $('#enter11am').css('background', '#3fbd3f');
     }
 
     if (time.isBetween(elevenStartTime, elevenEndTime)) {
 
-        $('#enter10am').css('background', '#ff6961');
+        $('#enter11am').css('background', '#ff6961');
     }
     if (time.isAfter(elevenEndTime)) {
-        $('#enter10am').css('background', '#d3d3d3');
+        $('#enter11am').css('background', '#d3d3d3');
 
     }
+    if (time.isBefore(twelveStartTime)) {
 
+        $('#enter12pm').css('background', '#3fbd3f');
+    }
+
+    if (time.isBetween(twelveStartTime, twelveEndTime)) {
+
+        $('#enter12pm').css('background', '#ff6961');
+    }
+    if (time.isAfter(twelveEndTime)) {
+        $('#enter12pm').css('background', '#d3d3d3');
+
+    }
+    if (time.isBefore(oneStartTime)) {
+
+        $('#enter1pm').css('background', '#3fbd3f');
+    }
+
+    if (time.isBetween(oneStartTime, oneEndTime)) {
+
+        $('#enter1pm').css('background', '#ff6961');
+    }
+    if (time.isAfter(oneEndTime)) {
+        $('#enter1pm').css('background', '#d3d3d3');
+
+    }
+    if (time.isBefore(twoStartTime)) {
+
+        $('#enter2pm').css('background', '#3fbd3f');
+    }
+
+    if (time.isBetween(twoStartTime, twoEndTime)) {
+
+        $('#enter2pm').css('background', '#ff6961');
+    }
+    if (time.isAfter(twoEndTime)) {
+        $('#enter2pm').css('background', '#d3d3d3');
+
+    }
+    if (time.isBefore(threeStartTime)) {
+
+        $('#enter3pm').css('background', '#3fbd3f');
+    }
+
+    if (time.isBetween(threeStartTime, threeEndTime)) {
+
+        $('#enter3pm').css('background', '#ff6961');
+    }
+    if (time.isAfter(threeEndTime)) {
+        $('#enter3pm').css('background', '#d3d3d3');
+
+    }
+    if (time.isBefore(fourStartTime)) {
+
+        $('#enter4pm').css('background', '#3fbd3f');
+    }
+
+    if (time.isBetween(fourStartTime, fourEndTime)) {
+
+        $('#enter4pm').css('background', '#ff6961');
+    }
+    if (time.isAfter(fourEndTime)) {
+        $('#enter4pm').css('background', '#d3d3d3');
+
+    }
+    if (time.isBefore(fiveStartTime)) {
+
+        $('#enter5pm').css('background', '#3fbd3f');
+    }
+
+    if (time.isBetween(fiveStartTime, fiveEndTime)) {
+
+        $('#enter5pm').css('background', '#ff6961');
+    }
+    if (time.isAfter(fiveEndTime)) {
+        $('#enter5pm').css('background', '#d3d3d3');
+
+    }
 }
+
+
