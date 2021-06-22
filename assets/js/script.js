@@ -1,74 +1,74 @@
 
 $(document).ready(function () {
     $("#today").text(moment().format('dddd') + ", " + moment().format('LL'));
-    scheduleInput();
+    writeToSchedule();
 });
 
 $("#confirmButton9am").click(function () {
     var availableSlot = "textarea9am";
     var apptInfo = document.getElementById('textarea9am').value;
-    setAppt(availableSlot, apptInfo);
-    scheduleInput();
+    setAppointment(availableSlot, apptInfo);
+    writeToSchedule();
 });
 
 $("#confirmButton10am").click(function () {
     var availableSlot = "textarea10am";
     var apptInfo = document.getElementById('textarea10am').value;
-    setAppt(availableSlot, apptInfo);
-    scheduleInput();
+    setAppointment(availableSlot, apptInfo);
+    writeToSchedule();
 });
 
 $("#confirmButton11am").click(function () {
     var availableSlot = "textarea11am";
     var apptInfo = document.getElementById('textarea11am').value;
-    setAppt(availableSlot, apptInfo);
-    scheduleInput();
+    etAppointment(availableSlot, apptInfo);
+    writeToSchedule();
 });
 
 $("#confirmButton12pm").click(function () {
     var availableSlot = "textarea12pm";
     var apptInfo = document.getElementById('textarea12pm').value;
-    setAppt(availableSlot, apptInfo);
-    scheduleInput();
+    etAppointment(availableSlot, apptInfo);
+    swriteToSchedule();
 });
 
 $("#confirmButton1pm").click(function () {
     var availableSlot = "textarea1pm";
     var apptInfo = document.getElementById('textarea1pm').value;
-    setAppt(availableSlot, apptInfo);
-    scheduleInput();
+    setAppointment(availableSlot, apptInfo);
+    swriteToSchedule();
 });
 
 $("#confirmButton2pm").click(function () {
     var availableSlot = "textarea2pm";
     var apptInfo = document.getElementById('textarea2pm').value;
-    setAppt(availableSlot, apptInfo);
-    scheduleInput();
+    setAppointment(availableSlot, apptInfo);
+    writeToSchedule();
 });
 
 $("#confirmButton3pm").click(function () {
     var availableSlot = "textarea3pm";
     var apptInfo = document.getElementById('textarea3pm').value;
-    setAppt(availableSlot, apptInfo);
-    scheduleInput();
+    setAppointment(availableSlot, apptInfo);
+    writeToSchedule();
 });
 
 $("#confirmButton4pm").click(function () {
     var availableSlot = "textarea4pm";
     var apptInfo = document.getElementById('textarea4pm').value;
-    setAppt(availableSlot, apptInfo);
-    scheduleInput();
+    setAppointment(availableSlot, apptInfo);
+    writeToSchedule();
 });
 
 $("#confirmButton5pm").click(function () {
     var availableSlot = "textarea5pm";
     var apptInfo = document.getElementById('textarea5pm').value;
-    setAppt(availableSlot, apptInfo);
-    scheduleInput();
+    setAppointment(availableSlot, apptInfo);
+    writeToSchedule();
 });
 
 
-function setAppt(time, details) {
+function setAppointment(time, details) {
     var newAppt = {
         time: time,
         title: details
@@ -76,6 +76,7 @@ function setAppt(time, details) {
 
 
     scheduleArray = JSON.parse(localStorage.getItem("scheduleArray")) || [];
+  
 
     scheduleArray = scheduleArray.filter(appointment => appointment.time !== newAppt.time);
 
@@ -83,7 +84,7 @@ function setAppt(time, details) {
 
     localStorage.setItem('scheduleArray', JSON.stringify(scheduleArray));
 }
-function scheduleInput() {
+function writeToSchedule() {
     scheduleArray = JSON.parse(localStorage.getItem("scheduleArray")) || [];
 
     scheduleArray.map(newAppt => {
