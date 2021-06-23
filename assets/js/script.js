@@ -7,7 +7,7 @@ $(document).ready(function () {
 $("#confirmButton9am").click(function () {
     var availableSlot = "textarea9am";
     var apptInfo = document.getElementById('textarea9am').value;
-    bookAppt(availableSlot, apptInfo);lems taken into account while cr
+    bookAppt(availableSlot, apptInfo).value
     confirmTime()
 });
 
@@ -36,8 +36,8 @@ $("#confirmButton1pm").click(function () {
     var availableSlot = "textarea1pm";
     var apptInfo = document.getElementById('textarea1pm').value;
     bookAppt(availableSlot, apptInfo);
-    writeToSchedule();
-}); confirmTime()
+    confirmTime();
+}); 
 
 $("#confirmButton2pm").click(function () {
     var availableSlot = "textarea2pm";
