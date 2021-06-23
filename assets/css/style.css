@@ -93,7 +93,7 @@ body {
   color: white;
   overflow: auto;
   outline: none;
-
+ background-image: url("./Floppy-disk.png");
 }
 
 
@@ -101,5 +101,5 @@ body {
 .confirmButton:hover {
   font-size: 22px;
   transition: all .3s ease-in-out;
-  background-color: grey;
+  background-color: lightblue;
 }
