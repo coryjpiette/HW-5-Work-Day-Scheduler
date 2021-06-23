@@ -74,10 +74,8 @@ function bookAppt(time, details) {
         title: details
     }
 
-
     scheduleArray = JSON.parse(localStorage.getItem("scheduleArray")) || [];
   
-
     scheduleArray = scheduleArray.filter(appointment => appointment.time !== newAppt.time);
 
     scheduleArray.push(newAppt);
@@ -254,7 +252,7 @@ function checkTime() {
         $('#enter5pm').css('background', '#3fbd3f');
     }
 
-}
+};
 
 
 
