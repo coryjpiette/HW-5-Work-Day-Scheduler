@@ -24,3 +24,5 @@ If you refresh the page, don’t worry – your appointment is still safe.
 The planner can be reached at: https://coryjpiette.github.io/HW-5-Work-Day-Scheduler/
 
 Here's an after-hours screenshot of the planner:
+
+![image](https://user-images.githubusercontent.com/60293516/123334986-d6cf4400-d511-11eb-8f6f-676923ff91df.png)
