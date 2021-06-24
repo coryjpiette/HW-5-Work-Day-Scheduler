@@ -73,18 +73,21 @@ function bookAppt(time, details) {
         time: time,
         title: details
     }
-
+    
     scheduleArray = JSON.parse(localStorage.getItem("scheduleArray")) || [];
-  
+    //apptInfo.textContent = scheduleArray;
     scheduleArray = scheduleArray.filter(appointment => appointment.time !== newAppt.time);
 
     scheduleArray.push(newAppt);
-
+    //apptInfo.textContent = scheduleArray;
     localStorage.setItem('scheduleArray', JSON.stringify(scheduleArray));
+    
 }
+
+
 function confirmTime() {
     scheduleArray = JSON.parse(localStorage.getItem("scheduleArray")) || [];
-
+    
     scheduleArray.map(newAppt => {
 
         if (newAppt.title != 0) {
@@ -251,8 +254,18 @@ function checkTime() {
         $('#enter4pm').css('background', '#3fbd3f');
         $('#enter5pm').css('background', '#3fbd3f');
     }
-
+    //$('#textarea9am').val(localStorage.getItem('textarea9am')); 
+    //$('#textarea10am').val(localStorage.getItem('textarea10am')); 
+    //$('#textarea11am').val(localStorage.getItem('textarea11am')); 
+    //$('#textarea12pm').val(localStorage.getItem('textarea12pm')); 
+    //$('#textarea1pm').val(localStorage.getItem('textarea1pm')); 
+    //$('#textarea2pm').val(localStorage.getItem('textarea2pm')); 
+    //$('#textarea3pm').val(localStorage.getItem('textarea3pm')); 
+    //$('#textarea4pm').val(localStorage.getItem('textarea4pm')); 
+    //$('#textarea5pm').val(localStorage.getItem('textarea5pm')); 
 };
+
+
 
 
 
