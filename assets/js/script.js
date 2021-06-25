@@ -91,7 +91,7 @@ function confirmTime() {
     scheduleArray.map(newAppt => {
 
         if (newAppt.title != 0) {
-            $(newAppt.time).html(newAppt.title);
+            $("#" + newAppt.time).val(newAppt.title)
         }
     });
 }
